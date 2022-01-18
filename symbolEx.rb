@@ -1,36 +1,31 @@
 #A.
-sym = :welcome_to_ruby
-puts sym.start_with?("wel","zzz", "to")
-puts sym.end_with?("by","zy")
+sym1 = :welcome_to_ruby
+puts sym1.start_with?("wel","zzz", "to")
+puts sym1.end_with?("by","zy")
 
 #B.
-sym = :welcome_to_ruby
-puts sym.end_with?("by","zy")
+puts sym1.end_with?("by","zy")
 
 #C.
-sym = :welcome_to_rubz
-puts sym
+sym2 = :welcome_to_rubz
+puts sym2
 
 #D.
-sym = :welcome_to_rubz
-testSym = sym
-testSym = sym.to_s.gsub!("_" , "")
+testSym = sym2
+testSym = sym2.to_s.gsub!("_" , "")
 puts testSym.length
 
 #E.
-sym = :welcome_to_rubz
-puts sym.to_s.capitalize
-puts sym
+puts sym2.to_s.capitalize
+puts sym2
 
 #F.
-sym = :welcome_to_rubz
-puts "Here we convert it to #{sym.to_s.class}"
-puts "Here we convert it to #{sym.class}"
+puts "Here we convert it to #{sym2.to_s.class}"
+puts "Here we convert it to #{sym2.class}"
 
 #G.
-sym = :welcome_to_rubz
 arr = []
-sym.to_s.each_char do |ch|
+sym2.to_s.each_char do |ch|
   arr.append(ch.to_sym)
 end
 puts arr
